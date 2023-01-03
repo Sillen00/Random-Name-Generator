@@ -2,7 +2,6 @@ window.addEventListener("DOMContentLoaded", main);
 
 function main() {
   getData();
-//   displayRandomNameOnClick();
 }
 
 function getData() {
@@ -29,17 +28,14 @@ function useData(data) {
   displayRandomNameOnClick(namnArray);
 }
 
+function displayRandomNameOnClick(namnArray) {
+  const displayNameTag = document.querySelector("h4");
+  const btn = document.querySelector("button");
 
-function displayRandomNameOnClick(namnArray){
-    const displayNameTag = document.querySelector("h4");
-    const btn = document.querySelector("button")
-
-    
-    
-    btn.addEventListener("click", ()=>{
-        const randomNumber = Math.random() * namnArray.length;
-        const randomInteger = Math.floor(randomNumber);
-        const name = namnArray[randomInteger];
-        displayNameTag.innerHTML = name;
-    })
+  btn.addEventListener("click", () => {
+    const randomNumber = Math.random() * namnArray.length;
+    const randomInteger = Math.floor(randomNumber);
+    const name = namnArray[randomInteger];
+    displayNameTag.innerHTML = name;
+  });
 }

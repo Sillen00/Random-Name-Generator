@@ -27,8 +27,13 @@ h4{
     text-align: center;
     padding: 5rem;
     font-size: 4rem;
+    color: whitesmoke;
 }
 
 button{
-    
+    display: block;
+    margin: auto;
+    padding: 10px 40px;
+    background: transparent;
+    color: whitesmoke;
 }
