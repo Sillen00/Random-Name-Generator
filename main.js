@@ -1,40 +1,40 @@
-window.addEventListener("DOMContentLoaded",main)
+window.addEventListener("DOMContentLoaded", main);
 
-
-function main(){
-    getData();
+function main() {
+  getData();
 }
 
+function getData() {
+  td = new Date();
+  const year = td.getFullYear();
 
-function getData(){
-    td = new Date();
-    const year = td.getFullYear();
-
-    fetch(`http://sholiday.faboul.se/dagar/v2.1/${year}`)
-    .then(response => response.json())
-    .then(data => {
-        useData(data);
+  fetch(`http://sholiday.faboul.se/dagar/v2.1/${year}`)
+    .then((response) => response.json())
+    .then((data) => {
+      useData(data);
     });
-    
 }
 
+function useData(data) {
+  const displayNameTag = document.querySelector("h4");
+  let namnArray = [];
 
-
-function useData(data){
-    const displayNameTag = document.querySelector("h4")
-    let namnArray = [];
-
-    for (const dag of data.dagar) {
-        if(dag.namnsdag.length >= 1){
-            namnArray.push(dag.namnsdag) 
-
-        }
+  for (const dag of data.dagar) {
+    if (dag.namnsdag.length > 0) {
+      for (const namn of dag.namnsdag) {
+        namnArray.push(namn);
+      }
     }
-    const randomNumber = Math.random() * namnArray.length
-    const randomInteger = Math.floor(randomNumber)
-    
-    const name = data.dagar[randomInteger].namnsdag
 
+    // if(dag.namnsdag.length >= 1){
+    //     namnArray.push(dag.namnsdag)
 
-    displayNameTag.innerHTML = name;
+    // }
+  }
+  const randomNumber = Math.random() * namnArray.length;
+  const randomInteger = Math.floor(randomNumber);
+
+  const name = namnArray[randomInteger];
+
+  displayNameTag.innerHTML = name;
 }
