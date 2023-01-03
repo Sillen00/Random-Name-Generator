@@ -35,9 +35,6 @@ function useData(data){
     
     const name = data.dagar[randomInteger].namnsdag
 
-    console.log(name)
-    // console.log(namnArray)
-    // console.log(data.dagar)
 
     displayNameTag.innerHTML = name;
 }
