@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url(./backgorund\ technology\ dark.jpg);
+    background-image: url(./images/backgorund\ technology\ dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -25,7 +25,8 @@ h1{
 
 h4{
     text-align: center;
-    padding: 5rem;
+    margin-top: 3rem;
+    height: 160px;
     font-size: 4rem;
     color: whitesmoke;
 }
@@ -34,6 +35,16 @@ button{
     display: block;
     margin: auto;
     padding: 10px 40px;
-    background: transparent;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
     color: whitesmoke;
+    border: 5px solid black;
+    border-radius: 999999rem;
+    font-size: 1.5rem;
+    text-shadow: black 0px 0px 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0px 0px 50px red;
 }
