@@ -4,4 +4,7 @@ Try this random name generator out! :D
 
 (Picks a random name from Swedish name days.)
 
-Link [here](https://sillen00.github.io/Random-Name-Generator/)
+GitHub pages is a hosting provider for static pages. Unfortunately I can't host APIs on it. 
+But here is a picture! :)
+
+![RandomNameStartpage](https://user-images.githubusercontent.com/114336470/216842122-476dab4d-45d7-4548-924c-083f0959d53f.png)
