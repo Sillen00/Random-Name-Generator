@@ -1,9 +1,12 @@
 window.addEventListener("DOMContentLoaded", main);
 
+
+/**Starts the program. */
 function main() {
   getData();
 }
 
+/**Gets data from svenska helgdagar API. */
 function getData() {
   td = new Date();
   const year = td.getFullYear();
@@ -15,6 +18,7 @@ function getData() {
     });
 }
 
+/**Finds every name from "svenska namnsdagar". */
 function useData(data) {
   let namnArray = [];
 
@@ -28,6 +32,7 @@ function useData(data) {
   displayRandomNameOnClick(namnArray);
 }
 
+/**Picks a random name from "svenska namnsdagar" and displays name on screen. */
 function displayRandomNameOnClick(namnArray) {
   const displayNameTag = document.querySelector("h4");
   const btn = document.querySelector("button");
