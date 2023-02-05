@@ -4,4 +4,4 @@ Try this random name generator out! :D
 
 (Picks a random name from Swedish name days.)
 
-Link [here]()
+Link [here](https://sillen00.github.io/Random-Name-Generator/)
