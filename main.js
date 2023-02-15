@@ -11,7 +11,7 @@ function getData() {
   td = new Date();
   const year = td.getFullYear();
 
-  fetch(`http://sholiday.faboul.se/dagar/v2.1/${year}`)
+  fetch(`https://sholiday.faboul.se/dagar/v2.1/${year}`)
     .then((response) => response.json())
     .then((data) => {
       useData(data);
