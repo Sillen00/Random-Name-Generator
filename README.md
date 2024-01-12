@@ -2,10 +2,9 @@
 Having trouble choosing a name for your child? 
 Try this random name generator out! :D
 
-(Picks a random name from Swedish name days.)
+The generator picks a random name from Swedish name days (Svenska namnsdagar).
 
 Hosting webpage on Netlify. Click [here](https://random-name-nameday.netlify.app/) to generate names!
 
 Picture of the website! :)
-
 ![RandomNameStartpage](https://user-images.githubusercontent.com/114336470/216842122-476dab4d-45d7-4548-924c-083f0959d53f.png)
